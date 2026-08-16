@@ -3,57 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library UI</title>
-    <!-- CSS ගොනුව සම්බන්ධ කිරීම -->
+    <title>Book Library</title>
     <link rel="stylesheet" href="test.css">
+
 </head>
 <body>
-
-<div class="container">
-    
-    <!-- Header කොටස -->
-    <div class="box header">
-        <h1>Bookkk Library</h1>
-    </div>
-
-    <!-- Navigation කොටස -->
-    <div class="box gray-box">
-        Browse · Genres · My Shelf
-    </div>
-
-    <!-- පොත් පෙන්වන Grid එක -->
-    <div class="grid">
-        <!-- පළමු පොත -->
-        <div class="card">
-            <h2>The Village</h2>
-            <p>Rs. 1200 · In stock</p>
-            <button class="btn">♥ Save</button>
+    <header class="header">
+        <h1>Book Library</h1>
+        <img src="image/logo.png" alt="librarylogo" style="display: none;">
+    </header>
+    <nav>
+        Browse • Genres • My Self
+    </nav>
+<main>
+    <div class = "container">
+        <div class = "village" >
+            The village
+            <div class ="stock">
+                Rs. 1200 • In stock
+                <button class = "button" type="button" id ="submitbtn">
+                    💜Save
+                </button>
+            </div>
         </div>
-        
-        <!-- දෙවන පොත -->
-        <div class="card">
-            <h2>Paddy Fields</h2>
-            <p>Rs. 950 · Out of stock</p>
-            <button class="btn">♥ Save</button>
-        </div>
-    </div>
-
-    <!-- ලියාපදිංචි වීමේ Form එක -->
-    <div class="box gray-box">
-        <div class="form-content">
-            Join the library: 
-            Name [ <input type="text" class="input-field"> ] 
-            Email [ <input type="text" class="input-field"> ] 
-            [ Register ]
+        <div class = "Paddy">
+            Paddy Fields
+            <div class="outstock">
+                Rs. 950 • Out of stock
+                <button class ="button" type="button" id="submitbtn">
+                <ln/>💜Save
+                </button>
+            </div>
         </div>
     </div>
-
-    <!-- Footer කොටස -->
-    <div class="box footer">
+    <div class="library">
+        join the  Library: name [______] email [______] [ Register ]
+    </div>
+    <footer class="footer">
         © HICT 22013
-    </div>
-
-</div>
-
+    </footer>
+</main>
 </body>
 </html>
