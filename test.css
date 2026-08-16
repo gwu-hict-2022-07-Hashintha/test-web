@@ -1,0 +1,122 @@
+/* මූලික පිටු සැකැස්ම */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* ප්‍රධාන Container එක */
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* පොදු Box විලාසය */
+.box {
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Header එකේ විලාසය */
+.header {
+    background-color: #EBE4FF; /* ලා දම් පැහැය */
+    border: 2px solid #8254F8; /* තද දම් පැහැති බෝඩරය */
+    padding: 15px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #111;
+}
+
+/* Nav සහ Form (අළු පැහැති කොටස්) */
+.gray-box {
+    background-color: #F4F4F5;
+    border: 1px solid #D4D4D8;
+    padding: 15px;
+    font-family: monospace; /* රූපයේ ඇති ආකාරයේ අකුරු රටාව */
+    font-size: 15px;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+/* පොත් සඳහා Grid Layout එක */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Desktop සඳහා තීරු දෙකක් */
+    gap: 15px;
+}
+
+/* Book Card එකේ විලාසය */
+.card {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.card h2 {
+    margin: 0 0 12px 0;
+    font-size: 22px;
+    color: #000;
+}
+.card p {
+    margin: 0 0 18px 0;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Save බොත්තම */
+.btn {
+    background-color: #F3E8FF;
+    border: 1px solid #8254F8;
+    color: #8254F8;
+    padding: 6px 30px;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Form එකේ Input Fields සැකසීම */
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input-field {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555; /* යටින් ඇති ඉර පමණක් පෙන්වීම */
+    width: 70px;
+    outline: none;
+    font-family: monospace;
+    margin: 0 5px;
+}
+
+/* Footer එකේ විලාසය */
+.footer {
+    background-color: #EBE4FF;
+    border: 2px solid #8254F8;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Mobile Devices සඳහා Responsive සැකසුම */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; /* තිරය කුඩා වූ විට එක් තීරුවක් බවට පත් කිරීම */
+    }
+}
